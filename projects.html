@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Olga Macamo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Raleway', Arial, sans-serif;
+      }
+      
+      body {
+        background-color: #25565F;
+      }
+      
+      header {
+        padding: 20px 0;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        background-color: #25565F;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+      }
+      
+       .header-title {
+        color: #fff;
+        font-size: 22px;
+        margin-left: 50px;
+        margin-bottom: 10px;
+      }
+      
+       nav {
+        margin-left: 50px;
+      }
+      
+      nav a {
+        color: #ffffff;
+        text-decoration: none;
+        margin-right: 20px;
+        font-size: 13px;
+        font-weight: 500;
+        position: relative;
+        transition: color 0.3s;
+      }
+      
+      nav a:hover {
+        color: #D8BA37;
+      }
+      
+      nav a::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -5px;
+        left: 0;
+        background-color: #D8BA37;
+        transition: width 0.3s;
+      }
+      
+      nav a:hover::after {
+        width: 100%;
+      }
+      
+       .projects-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        padding: 50px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      
+       .project-card {
+        background-color: #fff;
+        width: 300px;
+        padding: 30px;
+        border-radius: 5px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.3s ease;
+      }
+      
+      .project-card:hover {
+        transform: translateY(-10px);
+      }
+      
+      .project-title {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        color: #25565F;
+        text-align: center;
+        min-height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .project-description {
+        font-size: 14px;
+        line-height: 1.6;
+        color: #555;
+        margin-bottom: 20px;
+        flex-grow: 1;
+        text-align: justify;
+      }
+      
+      .project-icon {
+        width: 80px;
+        height: 80px;
+        background-color: #25565F;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px auto;
+        font-size: 40px;
+        color: #D8BA37;
+        font-weight: bold;
+      }
+      
+      .view-button {
+        background-color: #D8BA37;
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 3px;
+        cursor: pointer;
+        font-weight: 500;
+        transition: background-color 0.3s;
+        align-self: center;
+      }
+      
+      .view-button:hover {
+        background-color: #c5a82e;
+      }
+      
+       html {
+        scroll-behavior: smooth;
+      }
+      
+       ::selection {
+        background-color: #25565F;
+        color: white;
+      }
+      
+       @media (max-width: 768px) {
+        .header-title, nav {
+          margin-left: 20px;
+        }
+        
+        .projects-container {
+          padding: 20px;
+        }
+        
+        .project-card {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-title">Olga Macamo</div>
+      <nav>
+        <a href="index.html">ABOUT ME</a>
+        <a href="resume.html">RESUME</a>
+        <a href="projects.html">PROJECTS</a>
+        <a href="contact.html">CONTACT</a>
+      </nav>
+    </header>
+    
+    <div class="projects-container">
+      <div class="project-card">
+        <h3 class="project-title">Controller System Energy Consumption</h3>
+        <p class="project-description">Develop a system that monitors electricity consumption in real time, using current sensors (such as SCT-013) and a microcontroller (Arduino or ESP32). The data can be sent to an app or an online spreadsheet for analysis and optimization of consumption</p>
+        <div class="project-icon">C</div>
+        <button class="view-button">View Full Project</button>
+      </div>
+      
+      <div class="project-card">
+        <h3 class="project-title">Smart Manager of Personal Finance</h3>
+        <p class="project-description">Create an automated spreadsheet that helps in personal financial control, using formulas, pivot charts and VBA macros. The spreadsheet can include expense categorization, spending forecasts, and alerts to avoid debt</p>
+        <div class="project-icon">S</div>
+        <button class="view-button">View Full Project</button>
+      </div>
+      
+      <div class="project-card">
+        <h3 class="project-title">Inventory Control</h3>
+        <p class="project-description">Develop a simple web system for inventory control, where users can add, edit, and remove products. The application can be done with React on the frontend and Firebase Firestore on the backend, allowing real-time access to data</p>
+        <div class="project-icon">I</div>
+        <button class="view-button">View Full Project</button>
+      </div>
+    </div>
+  </body>
+</html>

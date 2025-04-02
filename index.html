@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About me | Olga Macamo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Raleway', Arial, sans-serif;
+      }
+      
+      body {
+        background-color: #ffffff;
+      }
+      
+      header {
+        display: flex;
+        height: 450px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      }
+      
+      header section {
+        background-color: #25565F;
+        width: 50%;
+        height: 100%;
+        position: relative;
+        transition: all 0.3s ease;
+      }
+      
+      nav {
+        position: absolute;
+        top: 70px;
+        left: 50px;
+      }
+      
+      nav a {
+        color: #ffffff;
+        text-decoration: none;
+        margin-right: 20px;
+        font-size: 13px;
+        font-weight: 500;
+        position: relative;
+        transition: color 0.3s;
+      }
+      
+      nav a:hover {
+        color: #D8BA37;
+      }
+      
+      nav a::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -5px;
+        left: 0;
+        background-color: #D8BA37;
+        transition: width 0.3s;
+      }
+      
+      nav a:hover::after {
+        width: 100%;
+      }
+      
+      h2 {
+        color: #D8BA37;
+        font-size: 22px;
+        position: absolute;
+        bottom: 180px; /* Modificado de 120px para 180px para mover para cima */
+        left: 50px;
+        font-weight: 500;
+      }
+      
+      h1 {
+        color: #ffffff;
+        font-size: 42px;
+        font-weight: 700;
+        position: absolute;
+        bottom: 50px;
+        left: 50px;
+        line-height: 1.1;
+        letter-spacing: 1px;
+      }
+      
+      header p {
+        color: #ffffff;
+        font-size: 14px;
+        position: absolute;
+        bottom: 20px;
+        left: 50px;
+        opacity: 0.9;
+      }
+      
+      header img {
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+        filter: grayscale(20%);
+        transition: filter 0.5s ease;
+      }
+      
+      header img:hover {
+        filter: grayscale(0%);
+      }
+      
+      main {
+        background-color: #E6E6E6;
+        padding: 15px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 22px;
+        color: #25565F;
+        letter-spacing: 1px;
+      }
+      
+      body > p {
+        padding: 40px 100px;
+        line-height: 1.8;
+        font-size: 15px;
+        color: #333333;
+        background-color: #f5f5f5;
+        text-align: justify;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      
+      footer {
+        background-color: #25565F;
+        color: #ffffff;
+        text-align: center;
+        padding: 20px;
+        margin-top: 30px;
+      }
+      
+      footer p {
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+      
+      footer .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+      }
+      
+      footer .social-icons a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 20px;
+        transition: color 0.3s;
+      }
+      
+      footer .social-icons a:hover {
+        color: #D8BA37;
+      }
+      
+      @media (max-width: 768px) {
+        header {
+          flex-direction: column;
+          height: auto;
+        }
+        
+        header section, header img {
+          width: 100%;
+        }
+        
+        header section {
+          padding: 40px 20px 100px;
+        }
+        
+        h2, h1, header p {
+          position: static;
+          margin-left: 30px;
+          margin-bottom: 10px;
+        }
+        
+        h2 {
+          margin-top: 40px;
+        }
+        
+        nav {
+          position: static;
+          margin: 30px;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+        }
+        
+        nav a {
+          margin-bottom: 10px;
+        }
+        
+        body > p {
+          padding: 30px 20px;
+        }
+        
+        footer {
+          padding: 15px;
+        }
+      }
+      
+      html {
+        scroll-behavior: smooth;
+      }
+      
+      ::selection {
+        background-color: #25565F;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <section>
+        <nav>
+          <a href="index.html">ABOUT ME</a>
+          <a href="resume.html">RESUME</a>
+          <a href="projects.html">PROJECTS</a>
+          <a href="contact.html">CONTACT</a>
+        </nav>
+        <h2>Hey, I´m</h2>
+        <h1>Olga<br>Macamo</h1>
+        <p>Electrician / Programmer</p>
+      </section>
+      <img src="img/perfil.jpg" alt="my picture">
+    </header>
+    <main>About me</main>
+    <p>I am an Industrial Maintenance Electrical Technician with training from the Metalworking Vocational Training Center and experience gained during a professional internship at Electricidade de Moçambique. I have skills in maintaining, installing, and diagnosing electrical systems, ensuring compliance with safety and efficiency standards. I am highly adaptable, work well in a team, and am highly organized and responsible. Additionally, I am dynamic, creative, and committed to the continuous improvement of processes and the implementation of new technologies.</p>
+    
+    <footer>
+      <p>&copy; 2025 Olga Macamo. All rights reserved.</p>
+      <p>Electrician & Programmer</p>
+      <div class="social-icons">
+        <a href="#" title="LinkedIn">LinkedIn</a>
+        <a href="#" title="GitHub">GitHub</a>
+        <a href="#" title="Email">Email</a>
+      </div>
+    </footer>
+  </body>
+</html>
